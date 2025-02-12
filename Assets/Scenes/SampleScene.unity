@@ -483,6 +483,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686255733}
   m_CullTransparentMesh: 1
+--- !u!1 &757424877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757424878}
+  m_Layer: 5
+  m_Name: Textcontainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &757424878
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757424877}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1878957499}
+  m_Father: {fileID: 1802613178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: -2188.5002}
+  m_SizeDelta: {x: 1833, y: 5457}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &764437450
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,9 +853,9 @@ RectTransform:
   m_Children:
   - {fileID: 1856192157}
   - {fileID: 304756485}
+  - {fileID: 764437454}
   - {fileID: 1874390867}
   - {fileID: 1802613178}
-  - {fileID: 764437454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -838,6 +874,7 @@ GameObject:
   - component: {fileID: 1802613178}
   - component: {fileID: 1802613180}
   - component: {fileID: 1802613179}
+  - component: {fileID: 1802613181}
   m_Layer: 5
   m_Name: RulesPanel
   m_TagString: Untagged
@@ -857,13 +894,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1878957499}
+  - {fileID: 757424878}
   m_Father: {fileID: 1669704069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5701904, y: 0}
+  m_SizeDelta: {x: 12.860324, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802613179
 MonoBehaviour:
@@ -878,7 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -903,6 +940,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802613177}
   m_CullTransparentMesh: 1
+--- !u!114 &1802613181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802613177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 757424878}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 20
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1856192156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,16 +1282,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878957498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1802613178}
+  m_Father: {fileID: 757424878}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328, y: 21}
+  m_AnchoredPosition: {x: -766, y: 2652}
   m_SizeDelta: {x: 200, y: 144.0216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878957500
@@ -1247,7 +1314,81 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rules of the Game...... Press ESC to Close
+  m_text: "How To Play Equilibrium \r\n\r\nEquilibrium is a social deduction game
+    in a fast-paced loop of play. Players will work together to correctly play cards
+    based on the random prompts given by rolling 2d4 (two four sided dice). \r\nPlayers
+    will talk throughout play to try to determine which player is actively trying
+    to bring the point total to zero by playing incorrect cards. \r\nFor the Imbalance
+    to win, they need to bring the point total to zero (0) during regular play, or
+    be crafty enough to avoid being accused of being the Imbalance during the final
+    voting phase of the game.\r\n\r\nSetup:\r\n\r\nSelect one (1) colour or symbol.
+    Next, select one (1) less cards than the number of current players with only
+    that symbol or color. Finally, select one (1) random card without the color or
+    symbol. \r\nDeal one (1) card face down to each player.\r\n \r\nThe player with
+    the card that does not have the selected symbol or colour is the Imbalance of
+    this round.\r\n\r\nReclaim these cards and shuffle them back into the deck. \r\nDeal
+    each player six (6) cards for their hand. This will be your hand for the first
+    round of play. \r\n\r\nWhen all players are ready to play, begin the timer!\r\n\r\nTimer:
+    \r\n\r\nWhen the timer starts, players will have 3 minutes to go through rounds
+    of play as quickly as they wish, discussing decisions, cards played, and suspicions
+    about other players. After 3 minutes, the buzzer will sound and players have
+    one (1) minute (The Final Minute) to vote for who they think has been the Imbalance
+    during the rounds of play!\r\n\r\nDie Rolls: \r\n\r\nAt the start of every round
+    of play, 2d4 (two four-sided dice) are rolled to determine which colour and shape
+    are meant to be played during this round. After every round, the dice are rerolled
+    to select a new colour and shape combination for this round of play.\r\n\r\nBlack
+    Die                               Blue Die\r\n1 - Red                                  
+    1 - Star\r\n2 - Yellow                               2 - Circle\r\n3 - Blue                                 
+    3 - Square \r\n4 - Green                               4 - Triangle \r\n\r\n\r\n\r\n\r\n\r\n\r\nSymbols
+    and Colours:\r\n\r\nThere are four (4) different symbols and four (4) different
+    colour faces for cards in this xxxx ((Will define total number of cards)) card
+    deck. \r\n\r\n\r\nEach card will have one colour and one symbol. \r\n\r\nPoints:\r\n\r\nThe
+    Balance will work together to place as many correct cards as possible while the
+    Imbalance tries to play cards that do not have the colour or symbols called at
+    the start of the round. \r\nThe Balance team will start with ten (10) points
+    at the beginning of the game. \r\nEvery time the Imbalance plays a card that
+    does not have the symbol or colour called at the start of the round, the point
+    total is reduced by one (1). \r\nThe Balance team is able to prevent points lost
+    by playing a single card that has both the colour and symbol called during that
+    round of play. \r\n\r\nIf the Balance team score reaches zero (0), the Imbalance
+    wins the game so long as the timer has not reached the Final Minute. \r\n\r\nRounds:\r\n\r\nA
+    game will have as many rounds as the players have time to complete during the
+    first three (3) minutes of play. Each round can lower the point total if the
+    Imbalance successfully plays the appropriate cards. \r\nA round begins when the
+    2d4 (two four-sided dice) are rolled. \r\nPlayers place their chosen card face
+    down in the centre of the play area. When all players have played a card face
+    down in the centre of the play area, shuffle the cards quickly to obscure knowing
+    which card was played by which player. \r\nFlip all played cards face up and
+    tally the point total. If no sabotaging cards have been played this round, the
+    point total remains at the value it currently has until the Imbalance successfully
+    sabotages around. \r\nAdd these cards face-up to the discard pile and draw another
+    card from the top of the deck. All players should have six (6) cards in their
+    hand at the start of every round. If someone forgets to draw a card during this
+    phase of the round, that\u2019s okay - next round they will draw however many
+    cards they need to be holding six (6) at all times.\r\n\r\nRoll the dice and
+    resume the next round of play! Continue this pattern until the buzzer sounds
+    and everyone enters The Final Minute.\r\n\r\nThe Final Minute:\r\n\r\nPlayers
+    will have one (1) minute to deduce who the Imbalance has been during play. Debate,
+    accuse, or try to outsmart your fellow players before The Final Minute ends.
+    \r\nAs soon as the last second chimes on the timer, all players will point or
+    use a comfortable form of indicating who they think the Imbalance has been. Whichever
+    player receives the most votes from players must reveal their role as either
+    being on the side of Balance or Imbalance. \r\n\r\nIf the Imbalance receives
+    the most votes, the Balance wins!\r\n\r\nIf the Imbalance does not receive the
+    most votes, see below!\r\n\r\nEnd Game/Play Again:\r\n\r\nFor a short game, The
+    Final Minute will determine the winner of the game. The Balance wins when they
+    successfully vote for the Imbalance at the end of The Final Minute. The Imbalance
+    wins if they reduce the point total of the Balance to zero (0) through rounds
+    of play, or if they do not receive the most votes in The Final Minute. \r\n\r\nFor
+    longer play, if the Imbalance did not receive the most votes in The Final Minute,
+    the player with the most votes is removed from the next rounds of play. Restart
+    the timer with the remaining players and reset the point total to ten (10). Begin
+    again from the start with the smaller group and try to find the Imbalance! If
+    the Imbalance wins a consecutive round, follow the same rules of player elimination
+    and restart the timer with the remaining players. Continue this until the Imbalance
+    is successfully found or if only two players remain - one Balance and one Imbalance.
+    \r\n\r\nIf there are only two players remaining and one player is the Imbalance,
+    the Imbalance wins!\r\n\nPress ESC to Close"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1280,8 +1421,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1310,7 +1451,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 6.614929, z: -1548.2539, w: -4959.1357}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

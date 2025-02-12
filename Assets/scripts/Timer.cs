@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 180f; // 3 Minute Timer
-    public bool timerRunning = false;
+    private bool timerRunning = false;
     public TMP_Text timer;
 
     // UI Buttons
@@ -30,6 +30,8 @@ public class Timer : MonoBehaviour
         // Set up initial button visibility
         ResetButton.SetActive(true); // Reset button is visible at the start
         startButton.SetActive(true); // Start button is visible at the start
+
+        UpdateTimerDisplay(); // Ensure correct time display at the start
     }
 
     void Update()
@@ -42,32 +44,40 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining = 0;
                 timerRunning = false; // Stop timer
-                startButton.SetActive(true); // Start button reappears when timer reaches 0
-                ResetButton.SetActive(false); // Reset button hides when timer reaches 0
-                Debug.Log("Time!");
+                startButton.SetActive(true); // Show Start button when time reaches 0
+                ResetButton.SetActive(true); // Reset button stays visible
+                Debug.Log("Time Up!");
             }
-        }
 
-        int minutes = Mathf.FloorToInt(timeRemaining / 60);
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
-        timer.text = string.Format("{0}:{1:00}", minutes, seconds);
+            UpdateTimerDisplay();
+        }
     }
 
     public void StartTimer()
     {
-        if (!timerRunning) // Start the timer if it's not already running
+        if (!timerRunning) // Start the timer only if it isn't running
         {
-            timeRemaining = 180f; // Set to 3 minutes
             timerRunning = true; // Start timer
-            startButton.SetActive(false); // Start button disappears when timer starts
-            ResetButton.SetActive(true); // Reset button stays visible
+            startButton.SetActive(false); // Hide start button
+            ResetButton.SetActive(true); // Keep reset button visible
         }
     }
 
     public void ResetTimer()
     {
         timeRemaining = 180f; // Reset the timer to 3 minutes
-        timerRunning = true; // Continue the timer (set it to true to keep counting down)
+        timerRunning = false; // Stop the countdown
+        startButton.SetActive(true); // Show Start button
+        ResetButton.SetActive(true); // Keep reset button visible
+
+        UpdateTimerDisplay(); // Update UI immediately
         Debug.Log("Timer reset to 3 minutes");
+    }
+
+    private void UpdateTimerDisplay()
+    {
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        timer.text = string.Format("{0}:{1:00}", minutes, seconds);
     }
 }
