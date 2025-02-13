@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -797.02, y: 411.46}
+  m_AnchoredPosition: {x: -780, y: 403}
   m_SizeDelta: {x: 343.9633, y: 264.0409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111001969
@@ -229,14 +229,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1957735507}
+  m_Children: []
   m_Father: {fileID: 1669704069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: -423.85}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -793.1, y: -423.85}
+  m_SizeDelta: {x: 140.1, y: 87.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304756486
 MonoBehaviour:
@@ -259,10 +258,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_HighlightedColor: {r: 0.54901963, g: 0.105882354, b: 0.14901961, a: 1}
-    m_PressedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_SelectedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
+    m_NormalColor: {r: 0.8470589, g: 0.8078432, b: 0.12941177, a: 1}
+    m_HighlightedColor: {r: 0.5283019, g: 0.49744198, b: 0.08223568, a: 1}
+    m_PressedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -302,8 +301,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 410565a5800631b4b80f1bd381a5c8a6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -464,7 +463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: 283.25995}
+  m_AnchoredPosition: {x: -612.98, y: 274.8}
   m_SizeDelta: {x: 595.6771, y: 123.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420267162
@@ -842,7 +841,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Who was the Imposter?
+  m_text: Who is the Imbalance?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -918,140 +917,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555491555}
-  m_CullTransparentMesh: 1
---- !u!1 &686255733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 686255734}
-  - component: {fileID: 686255736}
-  - component: {fileID: 686255735}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &686255734
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686255733}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 764437454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &686255735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686255733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Reset Timer
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &686255736
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686255733}
   m_CullTransparentMesh: 1
 --- !u!1 &757424877
 GameObject:
@@ -1129,10 +994,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_HighlightedColor: {r: 0.54901963, g: 0.105882354, b: 0.14901961, a: 1}
-    m_PressedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_SelectedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
+    m_NormalColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.49803922, b: 0.08235294, a: 1}
+    m_PressedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1172,8 +1037,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 47904c0b5f03f2c4d9045512bbc95a47, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1201,14 +1066,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 686255734}
+  m_Children: []
   m_Father: {fileID: 1669704069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 630, y: -424.7}
-  m_SizeDelta: {x: 162, y: 31.7}
+  m_AnchoredPosition: {x: 802.04, y: -424.7}
+  m_SizeDelta: {x: 140, y: 87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &972055134
 GameObject:
@@ -1244,7 +1108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -784.52, y: 258.03}
+  m_AnchoredPosition: {x: -767.5, y: 249.57004}
   m_SizeDelta: {x: 350.97, y: 42.8266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972055136
@@ -1677,7 +1541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.91764706, g: 0.8745098, b: 0.7058824, a: 1}
+  m_Color: {r: 0.3301887, g: 0.32860234, b: 0.32240123, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1721,7 +1585,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 20
+  m_ScrollSensitivity: 100
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -1883,8 +1747,8 @@ MonoBehaviour:
   timer: {fileID: 1856192158}
   startButton: {fileID: 304756484}
   resetButton: {fileID: 764437450}
-  startAnimation: {fileID: 0}
-  imposterText: {fileID: 0}
+  startAnimation: {fileID: 539751242}
+  imposterText: {fileID: 555491559}
   audioSource1: {fileID: 0}
   audioSource2: {fileID: 0}
   song1: {fileID: 8300000, guid: a244b7cd8d1dfc24f8e4b99fda116005, type: 3}
@@ -1920,14 +1784,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2076243636}
+  m_Children: []
   m_Father: {fileID: 1669704069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 905.39996, y: 494.84998}
-  m_SizeDelta: {x: 109.2, y: 90.3}
+  m_AnchoredPosition: {x: 872.3, y: 454.6}
+  m_SizeDelta: {x: 235, y: 157.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874390868
 MonoBehaviour:
@@ -1950,10 +1813,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_HighlightedColor: {r: 0.54901963, g: 0.105882354, b: 0.14901961, a: 1}
-    m_PressedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
-    m_SelectedColor: {r: 0.84313726, g: 0.14901961, b: 0.21960784, a: 1}
+    m_NormalColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
+    m_HighlightedColor: {r: 0.5294118, g: 0.49803922, b: 0.08235294, a: 1}
+    m_PressedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.84705883, g: 0.80784315, b: 0.12941177, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1993,8 +1856,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b1403b65c2b601944877da6b0616b2fc, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2088,65 +1951,63 @@ MonoBehaviour:
     to bring the point total to zero by playing incorrect cards. \r\nFor the Imbalance
     to win, they need to bring the point total to zero (0) during regular play, or
     be crafty enough to avoid being accused of being the Imbalance during the final
-    voting phase of the game.\r\n\r\nSetup:\r\n\r\nSelect one (1) colour or symbol.
-    Next, select one (1) less cards than the number of current players with only
-    that symbol or color. Finally, select one (1) random card without the color or
-    symbol. \r\nDeal one (1) card face down to each player.\r\n \r\nThe player with
-    the card that does not have the selected symbol or colour is the Imbalance of
-    this round.\r\n\r\nReclaim these cards and shuffle them back into the deck. \r\nDeal
-    each player six (6) cards for their hand. This will be your hand for the first
-    round of play. \r\n\r\nWhen all players are ready to play, begin the timer!\r\n\r\nTimer:
-    \r\n\r\nWhen the timer starts, players will have 3 minutes to go through rounds
-    of play as quickly as they wish, discussing decisions, cards played, and suspicions
-    about other players. After 3 minutes, the buzzer will sound and players have
-    one (1) minute (The Final Minute) to vote for who they think has been the Imbalance
-    during the rounds of play!\r\n\r\nDie Rolls: \r\n\r\nAt the start of every round
-    of play, 2d4 (two four-sided dice) are rolled to determine which colour and shape
-    are meant to be played during this round. After every round, the dice are rerolled
-    to select a new colour and shape combination for this round of play.\r\n\r\nBlack
-    Die                               Blue Die\r\n1 - Red                                  
-    1 - Star\r\n2 - Yellow                               2 - Circle\r\n3 - Blue                                 
-    3 - Square \r\n4 - Green                               4 - Triangle \r\n\r\n\r\n\r\n\r\n\r\n\r\nSymbols
-    and Colours:\r\n\r\nThere are four (4) different symbols and four (4) different
-    colour faces for cards in this xxxx ((Will define total number of cards)) card
-    deck. \r\n\r\n\r\nEach card will have one colour and one symbol. \r\n\r\nPoints:\r\n\r\nThe
-    Balance will work together to place as many correct cards as possible while the
-    Imbalance tries to play cards that do not have the colour or symbols called at
-    the start of the round. \r\nThe Balance team will start with ten (10) points
-    at the beginning of the game. \r\nEvery time the Imbalance plays a card that
-    does not have the symbol or colour called at the start of the round, the point
-    total is reduced by one (1). \r\nThe Balance team is able to prevent points lost
-    by playing a single card that has both the colour and symbol called during that
-    round of play. \r\n\r\nIf the Balance team score reaches zero (0), the Imbalance
-    wins the game so long as the timer has not reached the Final Minute. \r\n\r\nRounds:\r\n\r\nA
-    game will have as many rounds as the players have time to complete during the
-    first three (3) minutes of play. Each round can lower the point total if the
-    Imbalance successfully plays the appropriate cards. \r\nA round begins when the
-    2d4 (two four-sided dice) are rolled. \r\nPlayers place their chosen card face
-    down in the centre of the play area. When all players have played a card face
-    down in the centre of the play area, shuffle the cards quickly to obscure knowing
+    voting phase of the game.\r\n\r\nStart of Play: \r\n\r\nSetup:\r\n\r\nSeparate
+    the Balance and Imbalance cards from the deck of play cards. \r\nDeal one (1)
+    card face down to each player.\r\n\r\nFor 4-7 players, include one (1) Imbalance
+    card.\r\nFor 8-11 players, include two (2) Imbalance cards.\r\n\r\nFor 12 players,
+    deal each player four (4) cards and include three (3) Imbalance cards.\r\n \r\nThe
+    player(s) with the \u201CImbalance\u201D card are the Imbalance of this round.\r\n\r\nDeal
+    each player six (6) cards for their hand. This will be your hand for the rest
+    of the game. \r\n\r\nWhen all players are ready to play, begin the timer!\r\n\r\nTimer:
+    \r\n\r\nWhen the timer starts, players will have four (4)  minutes to go through
+    rounds of play as quickly as they wish, discussing decisions, cards played, and
+    suspicions about other players. After 3 minutes, the buzzer will sound and players
+    have one (1) minute (The Final Minute) to continue rounds of play and conclude
+    who they think has been the Imbalance during the rounds of play!\r\n\r\nDie Rolls:
+    \r\n\r\nAt the start of every round of play, 2d4 (two four-sided dice) are rolled
+    to determine which colour and shape are meant to be played during this round.
+    After every round, the dice are rerolled to select a new colour and shape combination
+    for this round of play.\r\n\r\nBlack Die                               Blue Die\r\n1
+    - Red                                   1 - Star\r\n2 - Yellow                              
+    2 - Circle\r\n3 - Blue                                  3 - Square \r\n4 - Green                              
+    4 - Triangle \r\n\r\nSymbols and Colours:\r\n\r\nThere are four (4) different
+    symbols and four (4) different colour faces for cards in this card deck. \r\n\r\nEach
+    card will have one colour and one symbol. \r\n\r\nPoints:\r\n\r\nThe Balance
+    will work together to place as many correct cards as possible while the Imbalance
+    tries to play cards that do not have the colour or symbols called at the start
+    of the round. \r\nThe Balance team will start with ten (10) points at the beginning
+    of the game. \r\nEvery time a player plays a card that does not have the symbol
+    or colour called at the start of the round, the point total is reduced by one
+    (1) for each incorrect card. \r\nThe Balance team is able to prevent one point
+    loss by playing a single card that has both the colour and symbol called during
+    that round of play. \r\n\r\nIf the Balance team score reaches zero (0), the Imbalance
+    wins the game. \r\n\r\nRounds:\r\n\r\nA game will have as many rounds as the
+    players have time to complete during the four (4) minutes of play. Each round
+    can lower the point total if the cards played do not match the colour or shape
+    decided by the roll. \r\nA round begins when the 2d4 (two four-sided dice) are
+    rolled. \r\nPlayers place their chosen card face down in the centre of the play
+    area. When placing a card, players will state a colour and shape. This can be
+    accurate to the card they have played, or a bluff to try and learn more about
+    who may be the Imbalance player. When all players have played a card face down
+    in the centre of the play area, shuffle the cards quickly to obscure knowing
     which card was played by which player. \r\nFlip all played cards face up and
     tally the point total. If no sabotaging cards have been played this round, the
     point total remains at the value it currently has until the Imbalance successfully
-    sabotages around. \r\nAdd these cards face-up to the discard pile and draw another
-    card from the top of the deck. All players should have six (6) cards in their
-    hand at the start of every round. If someone forgets to draw a card during this
-    phase of the round, that\u2019s okay - next round they will draw however many
-    cards they need to be holding six (6) at all times.\r\n\r\nRoll the dice and
-    resume the next round of play! Continue this pattern until the buzzer sounds
-    and everyone enters The Final Minute.\r\n\r\nThe Final Minute:\r\n\r\nPlayers
-    will have one (1) minute to deduce who the Imbalance has been during play. Debate,
-    accuse, or try to outsmart your fellow players before The Final Minute ends.
-    \r\nAs soon as the last second chimes on the timer, all players will point or
-    use a comfortable form of indicating who they think the Imbalance has been. Whichever
-    player receives the most votes from players must reveal their role as either
-    being on the side of Balance or Imbalance. \r\n\r\nIf the Imbalance receives
+    sabotages around. \r\nAdd these cards face-up to the discard pile. Players continue
+    to play rounds for as long as there is still time on the timer or cards remaining
+    in their hand.\r\n\r\nRoll the dice and resume the next round of play! Continue
+    this pattern until the buzzer sounds and everyone enters The Final Minute.\r\n\r\nThe
+    Final Vote:\r\n\r\nAs soon as the last second chimes on the timer, all players
+    will point or use a comfortable form of indicating who they think the Imbalance
+    has been. Whichever player receives the most votes from players must reveal their
+    role as either being on the side of Balance or Imbalance by turning over the
+    card they were dealt at the start of the game. \r\n\nIf the Imbalance receives
     the most votes, the Balance wins!\r\n\r\nIf the Imbalance does not receive the
     most votes, see below!\r\n\r\nEnd Game/Play Again:\r\n\r\nFor a short game, The
-    Final Minute will determine the winner of the game. The Balance wins when they
+    Final Vote will determine the winner of the game. The Balance wins when they
     successfully vote for the Imbalance at the end of The Final Minute. The Imbalance
     wins if they reduce the point total of the Balance to zero (0) through rounds
-    of play, or if they do not receive the most votes in The Final Minute. \r\n\r\nFor
+    of play, or if they do not receive the most votes in The Final Vote. \r\n\r\nFor
     longer play, if the Imbalance did not receive the most votes in The Final Minute,
     the player with the most votes is removed from the next rounds of play. Restart
     the timer with the remaining players and reset the point total to ten (10). Begin
@@ -2164,8 +2025,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2231,276 +2092,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878957498}
-  m_CullTransparentMesh: 1
---- !u!1 &1957735506
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1957735507}
-  - component: {fileID: 1957735509}
-  - component: {fileID: 1957735508}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1957735507
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957735506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 304756485}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1957735508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957735506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Start
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1957735509
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957735506}
-  m_CullTransparentMesh: 1
---- !u!1 &2076243635
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2076243636}
-  - component: {fileID: 2076243638}
-  - component: {fileID: 2076243637}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2076243636
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076243635}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1874390867}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2076243637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076243635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Rules
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 31.3
-  m_fontSizeBase: 31.3
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2076243638
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076243635}
   m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
