@@ -1,139 +1,143 @@
-using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 180f; // 3-Minute Timer
+    public float timeRemaining = 240f; // 4 minute timer
     private bool timerRunning = false;
-    private bool secondTimerRunning = false; // One-Minute Timer
-
-    // Public getters for other scripts (like Background.cs)
-    public bool IsTimerRunning => timerRunning;
-    public bool IsSecondTimerRunning => secondTimerRunning;
 
     public TMP_Text timer;
     public GameObject startButton;
-    public GameObject ResetButton;
-    private Button startButtonComponent;
-    private Button resetButtonComponent;
-    public AudioSource audioSource;
+    public GameObject resetButton;
+    public GameObject startAnimation;
 
-    private float oneMinuteRemaining = 60f; // Last minute countdown
+    public TMP_Text imposterText;
 
-    // Animator Reference for Scale Animation
-    public Animator scaleAnimator;
+    public AudioSource audioSource1;
+    public AudioSource audioSource2;
+
+    public AudioClip song1;
+    public AudioClip song2;
+
+    private float lastTenSeconds = 10f;
 
     void Start()
     {
-        startButtonComponent = startButton.GetComponent<Button>();
-        resetButtonComponent = ResetButton.GetComponent<Button>();
+        startButton.GetComponent<Button>().onClick.AddListener(StartTimer);
+        resetButton.GetComponent<Button>().onClick.AddListener(ResetTimer);
 
-        startButtonComponent.onClick.AddListener(StartTimer);
-        resetButtonComponent.onClick.AddListener(ResetTimer);
-
-        ResetButton.SetActive(true);
+        resetButton.SetActive(false);
         startButton.SetActive(true);
+        if (imposterText != null) imposterText.gameObject.SetActive(false); // Hide imposter text until 4:00
+        if (startAnimation != null) startAnimation.SetActive(true); // Show Scale Animation
 
         UpdateTimerDisplay();
 
-        if (audioSource != null)
-        {
-            audioSource.Stop();
-        }
+        if (!audioSource1) audioSource1 = gameObject.AddComponent<AudioSource>();
+        if (!audioSource2) audioSource2 = gameObject.AddComponent<AudioSource>();
+
+        audioSource1.clip = song1;
+        audioSource2.clip = song2;
+
+        audioSource1.loop = true;
+        audioSource2.loop = true;
+
+        audioSource1.Stop();
+        audioSource2.Stop();
     }
 
     void Update()
     {
-        if (timerRunning)
-        {
-            timeRemaining -= Time.deltaTime;
+        if (!timerRunning) return;
 
-            if (timeRemaining <= 0)
+        timeRemaining -= Time.deltaTime;
+
+        if (timeRemaining <= lastTenSeconds && timeRemaining > 0)
+        {
+            timer.color = Color.red; // When timer is 0:10, Change text colour to red
+        }
+
+        if (timeRemaining <= 0)
+        {
+            timeRemaining = 0;
+            timerRunning = false;
+
+            // After 4:00 has passed
+
+            // Stop Song1, play Song2
+            if (audioSource1.isPlaying)
             {
-                timeRemaining = 0;
-                timerRunning = false;
-                secondTimerRunning = true; // Start the final 1-minute countdown
+                audioSource1.Stop();
             }
 
-            UpdateTimerDisplay();
-        }
-        else if (secondTimerRunning)
-        {
-            oneMinuteRemaining -= Time.deltaTime;
-
-            if (oneMinuteRemaining <= 0)
+            if (!audioSource2.isPlaying)
             {
-                oneMinuteRemaining = 0;
-                secondTimerRunning = false;
-                Debug.Log("Time Up!");
+                audioSource2.Play();
             }
 
-            UpdateTimerDisplay();
+            // Hide the timer
+            timer.gameObject.SetActive(false);
+
+            // Hide StartAnimation
+            if (startAnimation != null) startAnimation.SetActive(false);
+
+            // Show "Who was the Imposter?" text
+            if (imposterText != null)
+            {
+                imposterText.gameObject.SetActive(true);
+                imposterText.text = "Who is the Imposter?";
+                imposterText.color = Color.red;
+            }
         }
+
+        UpdateTimerDisplay();
     }
 
     public void StartTimer()
     {
-        if (!timerRunning && !secondTimerRunning)
+        if (!timerRunning)
         {
             timerRunning = true;
             startButton.SetActive(false);
-            ResetButton.SetActive(true);
-
-            // Reset text color when restarting from 3:00
+            resetButton.SetActive(true);
             timer.color = Color.white;
+            timer.gameObject.SetActive(true);
         }
 
-        if (audioSource != null && !audioSource.isPlaying)
+        if (!audioSource1.isPlaying)
         {
-            audioSource.Play();
+            audioSource1.Play();
         }
     }
 
     public void ResetTimer()
     {
-        timeRemaining = 180f;
-        oneMinuteRemaining = 60f;
+        Debug.Log("Reset Timer Clicked!");
+
+        timeRemaining = 240f;
         timerRunning = false;
-        secondTimerRunning = false;
 
         startButton.SetActive(true);
-        ResetButton.SetActive(true);
-
-        // Reset text color when resetting
+        resetButton.SetActive(false);
         timer.color = Color.white;
+        timer.gameObject.SetActive(true);
+
+        // Stop all music
+        audioSource1.Stop();
+        audioSource2.Stop();
+
+        // Reset UI elements
+        if (imposterText != null) imposterText.gameObject.SetActive(false); // Hide imposter text
+        if (startAnimation != null) startAnimation.SetActive(true); // Show Scale Animation 
 
         UpdateTimerDisplay();
-
-        if (audioSource != null && audioSource.isPlaying)
-        {
-            audioSource.Stop();
-        }
-
-        if (scaleAnimator != null)
-        {
-            scaleAnimator.enabled = false; // Disable animation when resetting
-        }
     }
 
     private void UpdateTimerDisplay()
     {
-        int minutes, seconds;
-
-        if (secondTimerRunning)
-        {
-            minutes = Mathf.FloorToInt(oneMinuteRemaining / 60);
-            seconds = Mathf.FloorToInt(oneMinuteRemaining % 60);
-            timer.color = Color.red; // Change text color to red in last minute
-        }
-        else
-        {
-            minutes = Mathf.FloorToInt(timeRemaining / 60);
-            seconds = Mathf.FloorToInt(timeRemaining % 60);
-        }
-
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timer.text = string.Format("{0}:{1:00}", minutes, seconds);
     }
 }
