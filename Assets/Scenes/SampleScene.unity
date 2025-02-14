@@ -463,7 +463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -612.98, y: 274.8}
+  m_AnchoredPosition: {x: -620, y: 267}
   m_SizeDelta: {x: 595.6771, y: 123.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420267162
@@ -488,8 +488,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Equilibrium
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
+  m_sharedMaterial: {fileID: -7690445036812514242, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 239.36444, w: 61.03125}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -788,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 137, y: -63}
+  m_AnchoredPosition: {x: -79, y: -100}
   m_SizeDelta: {x: 1572.4124, y: 365.1473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555491557
@@ -843,8 +843,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Who is the Imbalance?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
+  m_sharedMaterial: {fileID: -7690445036812514242, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -868,8 +868,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 134.13
+  m_fontSizeBase: 134.13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -904,7 +904,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -140.51422, y: 0, z: 2.0268555, w: 0}
+  m_margin: {x: -140.51422, y: 0, z: -349.68835, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1108,7 +1108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -767.5, y: 249.57004}
+  m_AnchoredPosition: {x: -755, y: 249.57004}
   m_SizeDelta: {x: 350.97, y: 42.8266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972055136
@@ -1133,8 +1133,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A Social Deduction Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
+  m_sharedMaterial: {fileID: -7690445036812514242, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1158,8 +1158,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27.6
+  m_fontSizeBase: 27.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1631,7 +1631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: 196}
+  m_AnchoredPosition: {x: -18, y: 196}
   m_SizeDelta: {x: 261.83, y: 50.9195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856192158
@@ -1656,8 +1656,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
+  m_sharedMaterial: {fileID: -7690445036812514242, guid: 15595fc0823e79143a9eebf34762ee5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1717,7 +1717,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -36.63678, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
